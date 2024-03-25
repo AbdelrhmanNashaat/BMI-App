@@ -27,6 +27,7 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.teal,
       appBar: AppBar(
         title: const Text('Result'),
         centerTitle: true,
@@ -43,22 +44,25 @@ class Result extends StatelessWidget {
               children: [
                 Text(
                   'Gender : ${isMale ? 'Male' : 'Female'}',
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context).textTheme.displaySmall,
                   textAlign: TextAlign.center,
                 ),
                 Text(
                   'Result : ${result.toStringAsFixed(1)}',
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context).textTheme.displaySmall,
                   textAlign: TextAlign.center,
                 ),
                 Text(
                   'Healthiness : $resultPhrase',
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context)
+                      .textTheme
+                      .displaySmall!
+                      .copyWith(fontSize: 40),
                   textAlign: TextAlign.center,
                 ),
                 Text(
                   'age : $age',
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context).textTheme.displaySmall,
                   textAlign: TextAlign.center,
                 ),
               ],

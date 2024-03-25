@@ -16,17 +16,17 @@ class MyApp extends StatelessWidget {
           color: Colors.white,
         ),
         textTheme: const TextTheme(
-          headline1: TextStyle(
+          displayLarge: TextStyle(
             fontSize: 60,
             fontWeight: FontWeight.w800,
             color: Colors.white,
           ),
-          headline2: TextStyle(
+          displayMedium: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
-          headline3: TextStyle(
+          displaySmall: TextStyle(
             fontSize: 45,
             fontWeight: FontWeight.bold,
             color: Colors.white,
