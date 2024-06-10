@@ -29,8 +29,15 @@ class Result extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.teal,
       appBar: AppBar(
-        title: const Text('Result'),
+        title: const Text(
+          'Result',
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: true,
+        backgroundColor: Colors.teal,
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+        ),
       ),
       body: SafeArea(
         child: Center(

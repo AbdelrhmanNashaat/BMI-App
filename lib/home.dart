@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Text(
                         'Height',
-                        style: Theme.of(context).textTheme.headline2,
+                        style: Theme.of(context).textTheme.displayMedium,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: [
                           Text(
                             heightValue.toStringAsFixed(1),
-                            style: Theme.of(context).textTheme.headline3,
+                            style: Theme.of(context).textTheme.displaySmall,
                           ),
                           const Text(
                             'CM',
@@ -157,7 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Text(
                 type == 'male' ? 'Male' : 'Female',
-                style: Theme.of(context).textTheme.headline2,
+                style: Theme.of(context).textTheme.displayMedium,
               ),
             ],
           ),
@@ -178,14 +178,14 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Text(
               type == 'age' ? 'Age' : 'Weight',
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.displayMedium,
             ),
             const SizedBox(
               height: 10,
             ),
             Text(
               type == 'age' ? '$age ' : '$weight',
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
